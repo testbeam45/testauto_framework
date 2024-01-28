@@ -1,0 +1,24 @@
+syntax = "proto3";
+
+package model;
+option java_package = "com.ntuc.income.model";
+
+message GPNPAGuardInsurance {
+    string scenarioGPO_GPN = 1;
+    string duration = 2;
+    string extractionTransmissionFlag =3;
+    string PlanType =4;
+    string policyDocumentDeliveryOptions =5;
+    string documentDeliveryEmail =6;
+    string mobileNumber = 7;
+    string insuredType =8;
+    string name = 9;
+    string dateOfBirth =10;
+    string ageGroup = 11;
+    string idType =12;
+    string idNumber =13;
+    string nationality =14;
+    string occupation = 15;
+    string relationship = 16;
+    string plan =17;
+}

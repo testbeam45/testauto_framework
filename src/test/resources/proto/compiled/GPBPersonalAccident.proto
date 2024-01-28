@@ -1,0 +1,19 @@
+syntax = "proto3";
+
+package model;
+option java_package = "com.ntuc.income.model";
+
+message GPBPersonalAccident {
+    string scenarioGPB = 1;
+    string policyFor =2;
+    string name = 3;
+    string dateOfBirth = 4;
+    string idType = 5;
+    string NRICFINNumber = 6;
+    string occupation = 7;
+    string relationship = 8;
+    string gender = 9;
+    string coverType = 10;
+    string policyDocumentDeliveryOptions = 11;
+    string emailForPolicyDocument = 12;
+}

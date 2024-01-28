@@ -1,0 +1,13 @@
+syntax = "proto3";
+
+package model;
+option java_package = "com.ntuc.income.model";
+
+message eBaoPolicyQuery {
+    string Scenario =1;
+    string email = 2;
+    string password = 3;
+    string policyNumber = 4;
+    string contractStatus =5;
+    string expectedProductCode =6;
+}

@@ -1,0 +1,31 @@
+syntax = "proto3";
+
+package model;
+option java_package = "com.ntuc.income.model";
+
+message GATGovTravellerInsurance {
+
+    string scenarioGAT = 1;
+    string rdButtonPolicyFor = 2;
+    string duration = 3;
+    string policyType = 4;
+    string expiryDate = 5;
+    string governmentScheme = 6;
+    string blanketPreXScheme = 7;
+    string eInvoiceFlag = 8;
+    string agencyMinistryName = 9;
+    string agencyMinistryPostalCode = 10;
+    string agencyMinistryUnitNo = 11;
+    string agencyMinistryAddress1 = 12;
+    string agencyMinistryAddress2 = 13;
+    string travelingCountry = 14;
+    string name = 15;
+    string dob = 16;
+    string idType = 17;
+    string idNumber = 18;
+    string gender = 19;
+    string relationship = 20;
+    string highRiskActivitiesCompetitiveSports = 21;
+    string preExistingMedicalCondition = 22;
+    string coverType = 23;
+}

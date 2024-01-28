@@ -1,0 +1,32 @@
+syntax = "proto3";
+
+package model;
+option java_package = "com.ntuc.income.model";
+
+message GMCMotorCycleInsurance {
+
+    string scenarioGMC = 1;
+    string usage = 2;
+    string registrationDate = 3;
+    string registrationNumber = 4;
+    string make = 5;
+    string vehicleModel = 6;
+    string vehicleCapacity = 7;
+    string numberOfSeats = 8;
+    string chassisNumber = 9;
+    string engineNumber = 10;
+    string claimAmount = 11;
+    string numberOfAccidents = 12;
+    string policyholderIsDriving = 13;
+    string roleType =14;
+    string driverName =15;
+    string driverIdType = 16;
+    string driverIDNumber = 17;
+    string driverDateOfBirth = 18;
+    string drivingLicenceRegistrationDate = 19;
+    string driverGender = 20;
+    string driverMaritalStatus = 21;
+    string driverOccupation = 22;
+    string deliveryOption = 23;
+    string coverType =24;
+}

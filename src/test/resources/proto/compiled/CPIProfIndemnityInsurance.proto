@@ -1,0 +1,21 @@
+syntax = "proto3";
+
+package model;
+option java_package = "com.ntuc.income.model";
+
+message CPIProfIndemnityInsurance {
+
+    string scenarioCPI = 1;
+    string duration = 2;
+    string effectiveDate = 3;
+    string natureOfBusiness = 4;
+    string locationTerritoryLimit = 5;
+    string name = 6;
+    string idType = 7;
+    string idNumber = 8;
+    string coverType = 9;
+    string typesOfLimit = 10;
+    string limitOfIndemnityAOA = 11;
+    string fixedPremium = 12;
+    string policyDocumentDeliveryOptions = 13;
+}

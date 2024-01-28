@@ -1,0 +1,13 @@
+syntax = "proto3";
+
+package model;
+option java_package = "com.ntuc.income.model";
+
+message GFMFleetMasterInsurance {
+
+    string scenarioGFM = 1;
+    string classType = 2;
+    string excessType = 3;
+    string scheme = 4;
+    string deliveryOption = 5;
+}

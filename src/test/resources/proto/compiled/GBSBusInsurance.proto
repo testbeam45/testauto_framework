@@ -1,0 +1,22 @@
+syntax = "proto3";
+
+package model;
+option java_package = "com.ntuc.income.model";
+
+message GBSBusInsurance {
+
+    string scenarioGBS = 1;
+    string usage = 2;
+    string registrationDate = 3;
+    string registrationNumber = 4;
+    string make = 5;
+    string vehicleModel = 6;
+    string vehicleCapacity = 7;
+    string numberOfSeats = 8;
+    string chassisNumber = 9;
+    string engineNumber = 10;
+    string claimAmount = 11;
+    string numberOfAccidents = 12;
+    string deliveryOption = 13;
+    string coverType =14;
+}

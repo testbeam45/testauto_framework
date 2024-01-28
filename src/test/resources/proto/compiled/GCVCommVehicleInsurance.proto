@@ -1,0 +1,33 @@
+syntax = "proto3";
+
+package model;
+option java_package = "com.ntuc.income.model";
+
+message GCVCommVehicleInsurance {
+
+    string scenarioGCV = 1;
+    string usage = 2;
+    string registrationDate = 3;
+    string registrationNumber = 4;
+    string make = 5;
+    string vehicleModel = 6;
+    string vehicleCapacity = 7;
+    string numberOfSeats = 8;
+    string chassisNumber = 9;
+    string engineNumber = 10;
+    string claimAmount = 11;
+    string numberOfAccidents = 12;
+    string vehicleType = 13;
+    string policyholderIsDriving = 14;
+    string roleType =15;
+    string driverName =16;
+    string driverIdType = 17;
+    string driverIDNumber = 18;
+    string driverDateOfBirth = 19;
+    string drivingLicenceRegistrationDate = 20;
+    string driverGender = 21;
+    string driverMaritalStatus = 22;
+    string driverOccupation = 23;
+    string deliveryOption = 24;
+    string coverType =25;
+}

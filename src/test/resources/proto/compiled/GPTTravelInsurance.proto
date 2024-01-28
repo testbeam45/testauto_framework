@@ -1,0 +1,14 @@
+syntax = "proto3";
+
+package model;
+option java_package = "com.ntuc.income.model";
+
+message GPTTravelInsurance {
+    string scenarioGPT =1;
+    string travelingCountry = 2;
+    string coverType = 3;
+    string policyDocumentDeliveryOptionsForPolicyholder = 4;
+    string emailField = 5;
+    string sendSMSConfirmationToPolicyholder = 6;
+    string mobileNumber = 7;
+}

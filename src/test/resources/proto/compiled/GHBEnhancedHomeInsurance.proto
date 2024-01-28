@@ -1,0 +1,23 @@
+syntax = "proto3";
+
+package model;
+option java_package = "com.ntuc.income.model";
+
+message GHBEnhancedHomeInsurance {
+    string scenarioGPO_GDH = 1;
+    string duration = 2;
+    string extractionTransmissionFlag = 3;
+    string PlanType = 4;
+    string policyDocumentDeliveryOptions = 5;
+    string documentDeliveryEmail = 6;
+    string mobileNumber = 7;
+    string insuredType = 8;
+    string postalCode = 9;
+    string unitNumber = 10;
+    string ownership = 11;
+    string builtInArea = 12;
+    string typeOfProperty =13;
+    string typeOfDwelling =14;
+    string insuredAddressPlanType =15;
+
+}

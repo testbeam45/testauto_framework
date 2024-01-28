@@ -1,0 +1,24 @@
+syntax = "proto3";
+
+package model;
+option java_package = "com.ntuc.income.model";
+
+message CBUBusinessInsurance {
+
+    string scenarioCBU = 1;
+    string categoryOfBusiness = 2;
+    string duration = 3;
+    string businessCode = 4;
+    string natureOfBusiness = 5;
+    string postalCode = 6;
+    string unitNumber = 7;
+    string country = 8;
+    string constructionOfWalls = 9;
+    string constructionOfRoof = 10;
+    string coverType = 11;
+    string sumInsured = 12;
+    string loadingType = 13;
+    string rate = 14;
+    string policyDocumentDeliveryOptions = 15;
+
+}

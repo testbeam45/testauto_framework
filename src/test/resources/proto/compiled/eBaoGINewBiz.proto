@@ -1,0 +1,50 @@
+syntax = "proto3";
+
+package model;
+option java_package = "com.ntuc.income.model";
+
+message eBaoGINewBiz {
+    string Scenario =1;
+    string email = 2;
+    string password = 3;
+    string productCode = 4;
+    string GPOProductCode = 5;
+    string agreementCode = 6;
+    string expiryDate = 7;
+    string entryMode = 8;
+    string idNumber = 9;
+    string policyDocumentDeliveryOptionsForPolicyholder  = 10;
+    string emailField = 11;
+    string sendSMSConfirmationToPolicyholder = 12;
+    string travelingCountry = 13;
+    string coverType = 14;
+    string name = 15;
+    string gender = 16;
+    string idType = 17;
+    string NRIC_FIN_Number = 18;
+    string dateOfBirth = 19;
+    string maritalStatus = 20;
+    string race = 21;
+    string language = 22;
+    string occupation = 23;
+    string customerCode = 24;
+    string residenceTelephone = 25;
+    string businessTelephone = 26;
+    string mobile = 27;
+    string customerEmail = 28;
+    string emailFlag = 29;
+    string otherContact = 30;
+    string staffOrStaffFamily = 31;
+    string staffCode = 32;
+    string dwellingType= 33;
+    string preferredCommunicationChannel= 34;
+    string contactType= 35;
+    string addressType= 36;
+    string postalCode= 37;
+    string address1= 38;
+    string address2= 39;
+    string address3= 40;
+    string address4= 41;
+    string unitNumber= 42;
+    string customerInfoDetails = 43;
+}

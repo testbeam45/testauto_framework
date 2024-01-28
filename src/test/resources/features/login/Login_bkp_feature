@@ -1,0 +1,123 @@
+Feature: Login
+  
+  Scenario Outline: Login to a test website
+    Given user launches the test portal with login data "<User>" and "<Password>"
+
+    Examples:
+      | User  | Password      |
+      | Login | digitalincome |
+
+  @PU-3 @Login-02
+  Scenario: Login to UP through a registered email
+    Given user is launched unified portal login form
+    When user enters username as ""
+    When user enters password as ""
+    And user clicks on login
+    Then error message is displayed for username
+    Then error message is displayed for password
+
+    When user enters username as "test123@"
+    When user enters password as "abcd12356"
+    And user clicks on login
+    Then error message is displayed for username
+
+    When user enters username as "test123@"
+    When user enters password as ""
+    Then error message is displayed for username
+    Then error message is displayed for password
+
+    When user enters username as "snehal.patil@income.com.sg"
+    When user enters password as ""
+    Then error message is displayed for password
+
+    When user enters username as "test123@"
+    When user enters password as "Abcd148979"
+    Then error message is displayed for username
+
+  @PU-3 @Login-03 @regression
+  Scenario Outline: User tries Resend OTP 2 times with invalid otp and login successfully
+    Given user launches the unified portal with login data "<Feature>" and "<Scenario>"
+    When user fills up the login form and clicks on next
+    When user enters invalid otp after resend otp link clicked
+    Then invalid otp error message is displayed
+    And wait for 20 seconds
+    And user clicks the resend otp for "1" times
+    And wait for 20 seconds
+    #TODO:: verify the special characters are not allowed to enter in otp
+#    And user enters invalid otp as "123!@#"
+#    Then invalid otp error message is displayed
+    When user clicked on Resend Otp link
+    And user enters the otp successfully
+    Then user is logged into the unified portal
+
+    Examples:
+      | Feature | Scenario                 |
+      | Login   | LoginToUP_WithOTP_2Times |
+
+  @PU-3 @Login-04 @regression
+  Scenario Outline: User tries Resend OTP <N> times with blank and <N+1> login successfully
+    Given user launches the unified portal with login data "<Feature>" and "<Scenario>"
+    When user fills up the login form and clicks on next
+    And user clicks the resend otp for "<N>" times
+    And user enters the otp successfully
+    Then user is logged into the unified portal
+
+    Examples:
+      | Feature | Scenario                 | N |
+      | Login   | LoginToUP_WithOTP_3Times | 3 |
+      | Login   | LoginToUP_WithOTP_4Times | 4 |
+
+  @PU-3 @Login-05 @regression
+  Scenario Outline: Verify Re-send OTP is successful
+    Given user launches the unified portal with login data "<Feature>" and "<Scenario>"
+    When user fills up the login form and clicks on next
+    And user enters invalid otp as "111111"
+    Then invalid otp error message is displayed
+    When user clicked on Resend Otp link
+    And user enters the otp successfully
+    #TODO::verify next page
+    Then user is logged into the unified portal
+
+    Examples:
+      | Feature | Scenario      |
+      | Login   | LoginToUP_WithOTP_1Time |
+
+  @PU-3 @Login-06 @regression @defect
+  Scenario Outline: User clicks on Not this number 5 times and see error message
+    Given user launches the unified portal with login data "<Feature>" and "<Scenario>"
+    When user fills up the login form and clicks on next
+    And user clicks on Not This Number link
+    Then user able to see the contact center number and email id
+    And user clicks on Not This Number link for five times
+    Then error message is displayed to the user
+
+    Examples:
+      | Feature | Scenario             |
+      | Login   | NotThisNumber_5Times |
+
+  @PU-3 @Login-07 @regression
+  Scenario Outline: User doesn't login with invalid credentials like <Scenario>
+    Given user launches the unified portal with login data "<Feature>" and "<Scenario>"
+    When user fills up the login form and clicks on next
+    Then error message is displayed to the user
+
+    Examples:
+      | Feature | Scenario            |
+      | Login   | EmailNotRegistered  |
+      | Login   | PasswordIsIncorrect |
+      | Login   | AccountNotActivated |
+
+  @PU-3 @Login-08 @defect @regression
+  Scenario Outline: User account is locked after 5 Re-Send OTP attempts
+    Given user launches the unified portal with login data "<Feature>" and "<Scenario>"
+    When user fills up the login form and clicks on next
+    And user clicked on Resend otp for 5 times
+    Then user account is locked for 30 minutes message is displayed
+    When user closes the otp pop up
+    And user clicks on login
+    #TODO::verify error message
+    Then error message is displayed to the user
+
+    Examples:
+      | Feature | Scenario        |
+      | Login   | ResendOtp5Times |

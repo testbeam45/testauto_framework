@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<configuration>
+    <properties>
+        <property name="LOG_HOME">logs</property>
+        <property name="FILE_NAME">${date:yyyy-MM-dd}</property>
+        <property name="PATTERN_COMMON">%d{HH:mm:ss.SSS} [QA] %level: %msg%n</property>
+    </properties>
+    <appenders>
+        <console name="console-log" target="SYSTEM_OUT">
+            <patternLayout pattern="${PATTERN_COMMON}"/>
+        </console>
+        <file name="daily-log" fileName="${LOG_HOME}/${FILE_NAME}.log" immediateFlush="true" append="true">
+            <patternLayout pattern="${PATTERN_COMMON}"/>
+        </file>
+    </appenders>
+    <loggers>
+        <root level="INFO">
+            <appenderRef ref="console-log"/>
+            <appenderRef ref="daily-log"/>
+        </root>
+    </loggers>
+</configuration>

@@ -1,0 +1,26 @@
+syntax = "proto3";
+
+package model;
+option java_package = "com.ntuc.income.model";
+
+message CWIWorkInjuryCompInsurance {
+
+    string scenarioCWI = 1;
+    string duration = 2;
+    string natureOfBusiness = 3;
+    string policyType = 4;
+    string businessCode = 5;
+    string maintenanceDefectsLiabilityPeriodOption = 6;
+    string maintenanceDefectsLiabilityPeriodType = 7;
+    string maintenanceDefectsLiabilityPeriod = 8;
+    string titleOfContract = 9;
+    string contractDescription = 10;
+    string occupation = 11;
+    string postalCode = 12;
+    string unitNumber = 13;
+    string coverType = 14;
+    string sumInsured = 15;
+    string rate = 16;
+    string policyDocumentDeliveryOptions = 17;
+
+}

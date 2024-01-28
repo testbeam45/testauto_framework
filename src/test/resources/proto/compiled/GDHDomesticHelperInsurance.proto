@@ -1,0 +1,28 @@
+syntax = "proto3";
+
+package model;
+option java_package = "com.ntuc.income.model";
+
+message GDHDomesticHelperInsurance {
+    string scenarioGPO_GDH = 1;
+    string duration = 2;
+    string extractionTransmissionFlag =3;
+    string PlanType =4;
+    string policyDocumentDeliveryOptions =5;
+    string documentDeliveryEmail =6;
+    string mobileNumber = 7;
+    string insuredType =8;
+    string name = 9;
+    string dateOfBirth =10;
+    string idType =11;
+    string idNumber =12;
+    string nationality =13;
+    string passportNumber =14;
+    string passportExpDate =15;
+    string withWaiver =16;
+    string SBTransmissionReferenceNumber =17;
+    string workPermitNo=18;
+    string workPermitType =19;
+    string passportExpiryDate =20;
+    string plan =21;
+}

@@ -1,0 +1,21 @@
+syntax = "proto3";
+
+package model;
+option java_package = "com.ntuc.income.model";
+
+message GSDSilverCareInsurance {
+    string scenarioGPO_GSD = 1;
+    string duration = 2;
+    string planType =3;
+    string insuredType =4;
+    string name = 5;
+    string dateOfBirth =6;
+    string ageGroup = 7;
+    string idType =8;
+    string idNumber =9;
+    string nationality =10;
+    string gender = 11;
+    string relationship = 12;
+    string plan =13;
+    string policyDocumentDeliveryOptionsForPolicyholder = 14;
+}

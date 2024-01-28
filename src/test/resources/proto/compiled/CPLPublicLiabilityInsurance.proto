@@ -1,0 +1,28 @@
+syntax = "proto3";
+
+package model;
+option java_package = "com.ntuc.income.model";
+
+message CPLPublicLiabilityInsurance {
+
+    string scenarioCPL = 1;
+    string duration =2;
+    string g1NotesDisclosure = 3;
+    string natureOfBusiness = 4;
+    string policyType = 5;
+    string MPDLPType = 6;
+    string MPDLPPeriod = 7;
+    string MPDLPBase = 8;
+    string contractTitle = 9;
+    string postalCode = 10;
+    string territorialLimit = 11;
+    string coverType = 12;
+    string limitOfIndemnityAOA = 13;
+    string flatPremium = 14;
+    string aoa = 15;
+    string rateType = 16;
+    string annualFlatPremium = 17;
+    string minimumDepositPremium = 18;
+    string annualRate = 19;
+    string policyDocumentDeliveryOptions = 20;
+}

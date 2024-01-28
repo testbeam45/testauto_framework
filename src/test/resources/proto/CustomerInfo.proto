@@ -1,0 +1,45 @@
+syntax = "proto3";
+
+package model;
+option java_package = "com.ntuc.income.model";
+
+message CustomerInfo {
+    string scenario= 1;
+    string email = 2;
+    string password = 3;
+    string name = 4;
+    string gender = 5;
+    string idType = 6;
+    string idNumber = 7;
+    string dateOfBirth = 8;
+    string maritalStatus = 9;
+    string race = 10;
+    string language = 11;
+    string occupation = 12;
+    string customerCode = 13;
+    string residenceTelephone = 14;
+    string businessTelephone = 15;
+    string mobile = 16;
+    string customerEmail = 17;
+    string emailFlag = 18;
+    string otherContact = 19;
+    string staffOrStaffFamily = 20;
+    string staffCode = 21;
+    string gstRegistration=22;
+    string gstRegistrationNumber=23;
+    string prospect=24;
+    string dwellingType=25;
+    string preferredCommunicationChannel=26;
+    string contactType=27;
+    string address1=28;
+    string address2=29;
+    string address3=30;
+    string address4=31;
+    string postalCode=32;
+    string addressType=33;
+    string unitNumber=34;
+
+
+
+
+}

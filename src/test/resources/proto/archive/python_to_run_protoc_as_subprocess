@@ -1,0 +1,16 @@
+import subprocess
+
+# Define the command you want to run
+command = [
+    "protoc",
+    "-I=~/Documents/testauto_framework/src/test/resources/proto/",
+    "--java_out=~/Documents/testauto_framework/src/test/resources/proto/",
+    "*.proto"
+]
+
+# Run the command
+try:
+    subprocess.run(command, check=True)
+    print("Compilation successful")
+except subprocess.CalledProcessError as e:
+    print("Error:", e)

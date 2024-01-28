@@ -1,0 +1,16 @@
+syntax = "proto3";
+
+package model;
+option java_package = "com.ntuc.income.model";
+
+message GPXAnnualTravelInsurance {
+    string scenarioGPX =1;
+    string travelingCountry = 2;
+    string coverType = 3;
+    string organisation = 4;
+    string policyDocumentDeliveryOptionsForPolicyholder = 5;
+    string emailField = 6;
+    string sendSMSConfirmationToPolicyholder = 7;
+    string mobileNumber = 8;
+
+}

@@ -1,0 +1,21 @@
+syntax = "proto3";
+
+package model;
+option java_package = "com.ntuc.income.model";
+
+message CSFFireInsurance {
+
+    string scenarioCSF = 1;
+    string duration = 2;
+    string g1NotesDisclosure = 3;
+    string natureOfBusiness = 4;
+    string postalCode = 5;
+    string unitNumber = 6;
+    string constructionClassification = 7;
+    string coverType = 8;
+    string interestType = 9;
+    string sumInsured = 10;
+    string rate = 11;
+    string policyDocumentDeliveryOptions = 12;
+
+}
