@@ -51,11 +51,11 @@ public class LoginPage {
         return driver.findElement(logoutLinkLocator).isDisplayed();
     }
 
-    public void login(String email, String password) {
-        enterEmail(email);
-        enterPassword(password);
-        clickLoginButton();
-    }
+//    public void login(String email, String password) {
+//        enterEmail(email);
+//        enterPassword(password);
+//        clickLoginButton();
+//    }
 
     public String getForgotPwdPageUrl(){
         String forgotPwdPageUrl = driver.getCurrentUrl();

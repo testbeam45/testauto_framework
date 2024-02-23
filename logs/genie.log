@@ -1,3 +1,0 @@
-12:05:13.308 [GENIE] org.testng.log4testng.Logger.warn(Logger.java:133)evel: Support to run JUnit tests using TestNG stands deprecated and will be removed in future versions. You can now use the JUnit5 TestNG engine to run both JUnit and TestNG tests. For more information refer to https://github.com/junit-team/testng-engine .sg
-12:05:13.759 [GENIE] io.github.bonigarcia.wdm.WebDriverManager.resolveDriverVersion(WebDriverManager.java:1212)evel: Using chromedriver 121.0.6167.85 (resolved driver for Chrome 121)sg
-12:05:13.767 [GENIE] io.github.bonigarcia.wdm.WebDriverManager.exportDriver(WebDriverManager.java:1265)evel: Exporting webdriver.chrome.driver as /Users/ddshenoy/.cache/selenium/chromedriver/mac-arm64/121.0.6167.85/chromedriversg

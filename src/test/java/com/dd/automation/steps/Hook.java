@@ -100,6 +100,8 @@ public class Hook extends BaseUtil {
             }
             base.Driver = new FirefoxDriver(firefoxOptions);
         } else if ("CHROME".equalsIgnoreCase(browser)) {
+//            WebDriverManager.chromedriver().clearDriverCache();
+//            WebDriverManager.chromedriver().clearResolutionCache();
             WebDriverManager.chromedriver().setup();
 //            ChromeDriverManager.getInstance(CHROME).version("2.46").setup();
             ChromeOptions options = new ChromeOptions();
